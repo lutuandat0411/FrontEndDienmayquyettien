@@ -18,7 +18,17 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
+     <style>
+.colum {
+    -webkit-column-count: 6; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+}
+
+</style>
 <body>
     <div class='preloader'><div class='loaded'>&nbsp;</div></div>
     <nav class="navbar navbar-default">
@@ -59,26 +69,65 @@
     </div>
     </div>
 
-    <table border="1px">
-        <tr>
-            <td>Máy Giặt</td>
-            <td>Điện THoại</td>
-            <td>Tủ lạnh</td>
-        </tr>
-        <tr>
-            <td>Mua ngay máy giặt Samsung online tặng thêm voucher đến 600.000đ từ 28/11 đến 30/11/2018.Điện máy Quyết Tiến tri ân khách hàng nhân dịp cuối tháng, tưng bừng diễn ra chương trình: "Mua ngay máy giặt Samsung online tặng thêm voucher đến 600.000đ" áp dụng từ 28/11 đến 30/11/2018, chi tiết chương trình như sau.</td>
-            <td>Cách sử dụng bảng điều khiển tủ lạnh Hitachi Inverter 450 lít R-VG540PGV3
-            Bạn đang dùng tủ lạnh Hitachi Inverter 450 lít R-VG540PGV3 nhưng chưa biết cách sử dụng thành thạo, trong bài viết này Điện máy Quyết Tiến sẽ hướng dẫn bạn cách sử dụng chi tiết nhé.</td>
-            <td>
-            Chương trình ưu đãi giảm 1.5 triệu khi mua Samsung Galaxy A9.Chương trình ưu đãi dành cho chủ sở hữu điện thoại Samsung chính hãng thuộc các dòng Samsung Galaxy khi mua Samsung Galaxy A9 2018 tại Điện máy Quyết Tiến. 
-            </td>
-        </tr>
-        <tr>
-            <td><img src="assets/images/maygiat.png" width="450" height="350"></td>
-            <td><img src="assets/images/Galaxy.jpeg" width="450" height="350"></td>
-            <td><img src="assets/images/tulanh.jpeg" width="450" height="350"></td>
-        </tr>
-    </table>
+
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="assets/images/slideshow_1.jpg" style="width:100%">
+  <img class="mySlides" src="assets/images/slideshow_2.jpg" style="width:100%">
+  <img class="mySlides" src="assets/images/maygiat.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ <h2 class="w3-center">Tin Hot</h2>
+<div class="container">
+            <div class="col-md-10">
+             <ul class="colum">
+		<span><img src="assets/images/maygiat.png" width="650" height="350"></span></br>
+		<span style="color:blue">Mua ngay máy giặt Samsung online tặng thêm voucher đến 600.000đ từ 28/11 đến 30/11/2018.Điện máy Quyết Tiến tri ân khách hàng nhân dịp cuối tháng, tưng bừng diễn ra chương trình: "Mua ngay máy giặt Samsung online tặng thêm voucher đến 600.000đ", chi tiết chương trình như sau.</span></br>
+		<button class="w3-button w3-red">Read more</button></br>
+		<span><img src="assets/images/Galaxy.jpeg" width="650" height="350"></span></br>
+		<span style="color:blue">Cách sử dụng bảng điều khiển tủ lạnh Hitachi Inverter 450 lít R-VG540PGV3
+            Bạn đang dùng tủ lạnh Hitachi Inverter 450 lít R-VG540PGV3 nhưng chưa biết cách sử dụng thành thạo, trong bài viết này Điện máy Quyết Tiến sẽ hướng dẫn bạn cách sử dụng chi tiết nhé.</span></br>
+            <button class="w3-button w3-red">Read more</button></br>
+		<span><img src="assets/images/tulanh.jpeg" width="650" height="350"></span></br>
+		<span style="color:blue">Chương trình ưu đãi giảm 1.5 triệu khi mua Samsung Galaxy A9.Chương trình ưu đãi dành cho chủ sở hữu điện thoại Samsung chính hãng thuộc các dòng Samsung Galaxy khi mua Samsung Galaxy A9 2018 tại Điện máy Quyết Tiến. </span></br>
+		<button class="w3-button w3-red">Read more</button></br>
+	</ul>
+</div>
+</div>
+
+
+     <h2 class="w3-center">Sản Phẩm Mới</h2>
+             <div class="container">
+            <div class="col-md-10">
+             <ul class="colum">
+		<span><img src="assets/images/1.jpg" width="650" height="350"></span></br>
+		<span><img src="assets/images/2.jpg" width="650" height="350"></span></br>
+		<span><img src="assets/images/3.png" width="650" height="350"></span></br>
+		<span><img src="assets/images/4.jpg" width="650" height="350"></span></br>
+		<span><img src="assets/images/5.png" width="650" height="350"></span></br>
+		<span><img src="assets/images/6.png" width="650" height="350"></span></br> 
+		<span><img src="assets/images/7.jpg" width="650" height="350"></span></br> 
+		<span><img src="assets/images/8.png" width="650" height="350"></span></br> 
+		<span><img src="assets/images/9.jpg" width="650" height="350"></span></br> 
+	</ul>
+</div>
+</div>
+<button class="w3-button w3-red">View more</button></br>
     
 
 <section id="footer-menu" class="sections footer-menu">
